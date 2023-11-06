@@ -11,11 +11,11 @@ The client needs to display the transaction history of the personal account in t
 ### Project key logic:
 * Table:
 ```
-  ФИО
+  Full name
   |-------------------------------------------------------------------------------------|
-  |  дата  |  сумма списания  |  сумма пополнения  |  способ поплнения  |  комментарий  |
+  |  date  |  write-off amount  |  top-up amount  |  replenishment method  |  comment   |
   |-------------------------------------------------------------------------------------|
-  |        |  итоговая сумма  |  итоговая сумма    |                    |               |
+  |        |  total amount      |  total amount   |                        |            |
 ```
 * There is data in the personal account database with operations for replenishing and debiting the balance (data.json).
 * Let's assume that you have already received data from the database in the form of an Account entity.
